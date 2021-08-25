@@ -7,7 +7,7 @@ export const HomeScreen = ({ navigation }) => {
   const handleHomePress = () => navigation.navigate('CreateJoinScreen');
 
   return (
-    <SafeAreaView style={s.container}>
+    <SafeAreaView style={s.evenContainer}>
       <Text style={s.titleText}>Welcome to FormSpaces!</Text>
       <Button
         title="Start"
@@ -21,7 +21,7 @@ export const CreateJoinScreen = ({ navigation }) => {
 const handleCreatePress = () => navigation.navigate('NameEntryScreen');
 
   return (
-    <SafeAreaView style={s.container}>
+    <SafeAreaView style={s.evenContainer}>
       <Button
         style={s.baseText}
         title="Create a Team"

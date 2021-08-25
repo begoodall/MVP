@@ -8,7 +8,7 @@ export const NameEntryScreen = ({ navigation }) => {
   const handleSubmit = () => navigation.navigate('TeamIDScreen', { name: name, teamName: teamName });
 
   return (
-    <SafeAreaView style={s.container}>
+    <SafeAreaView style={s.evenContainer}>
       <View>
         <Text style={s.baseText}>What's your name?</Text>
         <TextInput style={s.input}

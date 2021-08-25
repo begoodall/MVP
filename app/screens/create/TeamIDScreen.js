@@ -1,18 +1,23 @@
-import React, { useState } from 'react'
-import { Text, SafeAreaView, View, Button } from 'react-native'
+import React from 'react'
+import { Text, SafeAreaView, View, Button, TextInput, TouchableOpacity } from 'react-native'
 import { s } from '../styles.js';
 
-export const TeamIDScreen = (props) => {
-  const { name } = props.route.params;
+export const TeamIDScreen = ({ navigation, route }) => {
+  const { name, teamName } = route.params;
+  const handleNext = () => navigation.navigate('FormBoardScreen');
 
   return (
-    <SafeAreaView style={s.container}>
+    <SafeAreaView style={s.evenContainer}>
       <View>
-        <Text style={s.baseText}>Hey { name }! Here's your team's unique ID. Send this to your team members for them to register:</Text>
-        <Text style={s.baseText}>hackreactor@f67jf81</Text>
+        <Text style={s.pText}>Hey {name}! Here's your team's unique ID. Send this to your team members for them to register:</Text>
+        <TouchableOpacity>
+          <Text style={s.idText}>f67jf83ag870fde8g</Text>
+        </TouchableOpacity>
       </View>
       <Button
+        color="white"
         title="Next"
+        onPress={handleNext}
       />
     </SafeAreaView>
   )

@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { HomeScreen, CreateJoinScreen } from './app/screens/WelcomeScreen.js';
 import { NameEntryScreen } from './app/screens/create/NameEntryScreen.js';
 import { TeamIDScreen } from './app/screens/create/TeamIDScreen.js';
+import { FormBoardScreen } from './app/screens/create/FormBoardScreen.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -35,6 +36,13 @@ const MyStack = () => {
         <Stack.Screen
           name="TeamIDScreen"
           component={TeamIDScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="FormBoardScreen"
+          component={FormBoardScreen}
           options={{
             headerShown: false
           }}
