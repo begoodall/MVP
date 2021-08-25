@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Text, SafeAreaView, View, Button } from 'react-native'
-import s from '../styles.js';
+import { s } from '../styles.js';
 
-export default function TeamIDScreen(props) {
+export const TeamIDScreen = (props) => {
   const { name } = props.route.params;
 
   return (

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, SafeAreaView, Button } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import s from './styles.js';
+import { s } from './styles.js';
 
 export const HomeScreen = ({ navigation }) => {
   const handleHomePress = () => navigation.navigate('CreateJoinScreen');
@@ -31,7 +31,6 @@ const handleCreatePress = () => navigation.navigate('NameEntryScreen');
         style={s.baseText}
         title="Join a Team"
       />
-      {/* <StatusBar style="auto" /> */}
     </SafeAreaView>
   );
 }

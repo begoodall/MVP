@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Text, TextInput, SafeAreaView, View, Button } from 'react-native'
-import s from '../styles.js';
+import { s } from '../styles.js';
 
-export default function NameEntryScreen({ navigation }) {
+export const NameEntryScreen = ({ navigation }) => {
   const [name, setName] = useState('');
   const [teamName, setTeamName] = useState('');
   const handleSubmit = () => navigation.navigate('TeamIDScreen', { name: name, teamName: teamName });

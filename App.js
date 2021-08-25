@@ -2,8 +2,8 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { HomeScreen, CreateJoinScreen } from './app/screens/WelcomeScreen.js';
-import NameEntryScreen from './app/screens/create/NameEntryScreen.js';
-import TeamIDScreen from './app/screens/create/TeamIDScreen.js';
+import { NameEntryScreen } from './app/screens/create/NameEntryScreen.js';
+import { TeamIDScreen } from './app/screens/create/TeamIDScreen.js';
 
 const Stack = createNativeStackNavigator();
 
