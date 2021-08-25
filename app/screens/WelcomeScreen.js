@@ -1,47 +1,37 @@
 import * as React from 'react';
-import { StyleSheet, Text, SafeAreaView, Button } from 'react-native';
+import { Text, SafeAreaView, Button } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import s from './styles.js';
 
 export const HomeScreen = ({ navigation }) => {
-  const handlePress = () => navigation.navigate('CreateJoinScreen');
+  const handleHomePress = () => navigation.navigate('CreateJoinScreen');
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.baseText}>Welcome to FormSpaces!</Text>
+    <SafeAreaView style={s.container}>
+      <Text style={s.titleText}>Welcome to FormSpaces!</Text>
       <Button
-        title="Navigate"
-        onPress={handlePress}
+        title="Start"
+        onPress={handleHomePress}
       />
     </SafeAreaView>
   );
 }
 
-export const CreateJoinScreen = () => {
+export const CreateJoinScreen = ({ navigation }) => {
+const handleCreatePress = () => navigation.navigate('NameEntryScreen');
+
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={s.container}>
       <Button
-        style={styles.baseText}
+        style={s.baseText}
         title="Create a Team"
+        onPress={handleCreatePress}
       />
       <Button
-        style={styles.baseText}
+        style={s.baseText}
         title="Join a Team"
       />
       {/* <StatusBar style="auto" /> */}
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#334257',
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
-  },
-  baseText: {
-    fontFamily: 'Gill Sans',
-    fontSize: 28,
-    color: '#F3F3F3'
-  }
-});
