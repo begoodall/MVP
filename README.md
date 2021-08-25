@@ -1,1 +1,1 @@
-# centralized hub for organizations to manage forms
+# centralized hub for team-based form submission
