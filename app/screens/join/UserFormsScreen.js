@@ -4,7 +4,7 @@ import { dashStyles } from '../styles.js';
 import { dumBoardData, dumUserData } from '../../../dummydata.js';
 
 export const UserFormsScreen = ({ navigation }) => {
-  const handleFormPress = () => navigation.navigate('FormSpecificScreen');
+  const handleFormPress = () => navigation.navigate('FormInputScreen');
   const renderForms = ({ item }) => {
     let bgColor = 'rgba(125, 204, 243, 0.3)';
     if (item.complete) {
@@ -41,11 +41,6 @@ export const UserFormsScreen = ({ navigation }) => {
           renderItem={renderForms}
         />
       </View>
-      {/* <TouchableOpacity>
-        <View style={dashStyles.addFormBtn}>
-          <Text style={dashStyles.addFormPlus}>+</Text>
-        </View>
-      </TouchableOpacity> */}
     </SafeAreaView>
   )
 };

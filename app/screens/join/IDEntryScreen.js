@@ -4,16 +4,16 @@ import { s } from '../styles.js';
 
 export const IDEntryScreen = ({ navigation }) => {
   const [id, setID] = useState('');
-  // const handleSubmit = () => {
-  //   if (id === 'f67jf83ag870fde8g') {
-  //     navigation.navigate('WelcomeToTeamScreen');
-  //   } else {
-  //     Alert.alert(
-  //       "Please enter valid team ID"
-  //     )
-  //   }
-  // }
-  const handleSubmit = () => navigation.navigate('WelcomeToTeamScreen');
+  const handleSubmit = () => {
+    if (id === 'f67jf83ag870fde8g') {
+      navigation.navigate('WelcomeToTeamScreen');
+    } else {
+      Alert.alert(
+        "Please enter valid team ID"
+      )
+    }
+  }
+  // const handleSubmit = () => navigation.navigate('WelcomeToTeamScreen');
 
   return (
     <SafeAreaView style={s.evenContainer}>

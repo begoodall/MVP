@@ -1,16 +1,17 @@
 import React from 'react'
-import { Text, SafeAreaView, View, Button, TextInput, TouchableOpacity } from 'react-native'
+import { Text, SafeAreaView, View, Button, TextInput, TouchableOpacity, Alert } from 'react-native'
 import { s } from '../styles.js';
 
 export const TeamIDScreen = ({ navigation, route }) => {
   const { name, teamName } = route.params;
   const handleNext = () => navigation.navigate('FormBoardScreen');
+  const handleCopy = () => Alert.alert("Copied to clipboard")
 
   return (
     <SafeAreaView style={s.evenContainer}>
       <View>
         <Text style={s.pText}>Hey {name}! Here's your team's unique ID. Send this to your team members for them to register:</Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={handleCopy}>
           <Text style={s.idText}>f67jf83ag870fde8g</Text>
         </TouchableOpacity>
       </View>

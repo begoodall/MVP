@@ -5,16 +5,16 @@ import { s } from '../styles.js';
 export const NameEntryScreen = ({ navigation }) => {
   const [name, setName] = useState('');
   const [teamName, setTeamName] = useState('');
-  // const handleSubmit = () => {
-  //   if (name.length > 3 && teamName.length > 3) {
-  //     navigation.navigate('TeamIDScreen', { name: name, teamName: teamName });
-  //   } else {
-  //     Alert.alert(
-  //       "Please use 3+ characters for each field"
-  //     )
-  //   }
-  // }
-  const handleSubmit = () => navigation.navigate('TeamIDScreen', { name: name, teamName: teamName });
+  const handleSubmit = () => {
+    if (name.length > 2 && teamName.length > 2) {
+      navigation.navigate('TeamIDScreen', { name: name, teamName: teamName });
+    } else {
+      Alert.alert(
+        "Please use 3+ characters for each field"
+      )
+    }
+  }
+  // const handleSubmit = () => navigation.navigate('TeamIDScreen', { name: name, teamName: teamName });
 
   return (
     <SafeAreaView style={s.evenContainer}>
