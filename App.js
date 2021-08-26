@@ -6,6 +6,9 @@ import { NameEntryScreen } from './app/screens/create/NameEntryScreen.js';
 import { TeamIDScreen } from './app/screens/create/TeamIDScreen.js';
 import { FormBoardScreen } from './app/screens/create/FormBoardScreen.js';
 import { FormSpecificScreen } from './app/screens/create/FormSpecificScreen.js';
+import { FormResponseScreen } from './app/screens/create/FormResponseScreen';
+import { IDEntryScreen } from './app/screens/join/IDEntryScreen';
+import { WelcomeToTeamScreen } from './app/screens/join/WelcomeToTeamScreen.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -55,6 +58,28 @@ const MyStack = () => {
             headerShown: false
           }}
         />
+        <Stack.Screen
+          name="FormResponseScreen"
+          component={FormResponseScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+
+        <Stack.Screen
+          name="IDEntryScreen"
+          component={IDEntryScreen}
+          options={{
+            headerShown: false
+          }}
+        />
+      <Stack.Screen
+          name="WelcomeToTeamScreen"
+          component={WelcomeToTeamScreen}
+          options={{
+            headerShown: false
+          }}
+      />
       </Stack.Navigator>
     </NavigationContainer>
   );

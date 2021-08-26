@@ -7,6 +7,12 @@ export const s = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-evenly',
   },
+  aroundContainer: {
+    flex: 1,
+    backgroundColor: '#334257',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
   titleText: {
     fontFamily: 'Gill Sans',
     fontSize: 26,
@@ -111,5 +117,37 @@ export const dashStyles = StyleSheet.create({
     fontSize: 36,
     textAlign: 'center',
   },
-
-})
+  // ontainer: {
+  //   flex: 1,
+  //   flexDirection: 'column',
+  //   backgroundColor: '#334257',
+  //   alignItems: 'flex-start',
+  //   justifyContent: 'flex-start',
+  // },
+  responseList: {
+    top: 60,
+    left: 20,
+    marginBottom: 50
+  },
+  question: {
+    top: 60,
+    left: 20,
+    fontFamily: 'Gill Sans',
+    fontSize: 24,
+    fontWeight: '400',
+    color: '#F3F3F3',
+    marginBottom: 20,
+    marginTop: 40
+    // alignSelf: 'flex-start'
+  },
+  response: {
+    top: 60,
+    left: 20,
+    fontFamily: 'Gill Sans',
+    fontSize: 22,
+    fontWeight: '300',
+    color: '#F3F3F3',
+    marginBottom: 30
+    // alignSelf: 'flex-start'
+  },
+});

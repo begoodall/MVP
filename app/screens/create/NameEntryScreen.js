@@ -35,6 +35,7 @@ export const NameEntryScreen = ({ navigation }) => {
       </View>
       <Button
         title="Next"
+        color="rgba(125, 204, 243, 1)"
         onPress={handleSubmit}
       />
     </SafeAreaView>
