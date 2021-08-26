@@ -77,8 +77,17 @@ export const dashStyles = StyleSheet.create({
     fontWeight: '300',
     color: '#F3F3F3'
   },
+  listItemTextSmall: {
+    fontFamily: 'Gill Sans',
+    fontSize: 18,
+    fontWeight: '200',
+    alignSelf: 'center',
+    color: '#F3F3F3'
+  },
   listItemView: {
-    width: 300,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: 315,
     padding: 14,
     marginTop: 18,
     marginBottom: 18,
@@ -87,6 +96,21 @@ export const dashStyles = StyleSheet.create({
     borderRadius: 12,
     shadowColor: 'rgba(0, 0, 0, 0.25)',
     borderWidth: 1,
+  },
+  addFormBtn: {
+    justifyContent: 'center',
+    height: 70,
+    width: 70,
+    backgroundColor: 'rgba(125, 204, 243, 0.4)',
+    borderRadius: 50,
+    bottom: 160,
+    left: 280
+  },
+  addFormPlus: {
+    color: '#F3F3F3',
+    fontSize: 36,
+    textAlign: 'center',
+    alignSelf: 'center'
   }
 
 })

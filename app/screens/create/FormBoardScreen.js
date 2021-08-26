@@ -4,10 +4,12 @@ import { dashStyles } from '../styles.js';
 import { dumBoardData } from '../../../dummydata.js';
 
 export const FormBoardScreen = ({ navigation }) => {
+  const handleFormPress = () => navigation.navigate('FormSpecificScreen');
   const renderForms = ({ item }) => (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={handleFormPress}>
       <View style={dashStyles.listItemView}>
         <Text style={dashStyles.listItemText}>{item.title}</Text>
+        <Text style={dashStyles.listItemTextSmall}>{item.dueDate}</Text>
       </View>
     </TouchableOpacity>
   );
@@ -19,11 +21,15 @@ export const FormBoardScreen = ({ navigation }) => {
         <FlatList
           style={dashStyles.list}
           data={dumBoardData.forms}
-          keyExtractor={dumBoardData.id}
+          keyExtractor={dumBoardData.forms.id}
           renderItem={renderForms}
         />
       </View>
-
+      <TouchableOpacity>
+        <View style={dashStyles.addFormBtn}>
+          <Text style={dashStyles.addFormPlus}>+</Text>
+        </View>
+      </TouchableOpacity>
     </SafeAreaView>
   )
 };
