@@ -3,27 +3,33 @@ import { Text, SafeAreaView, View, Button, TextInput, TouchableOpacity, FlatList
 import { dashStyles } from '../styles.js';
 import { dumForm1Data } from '../../../dummydata.js';
 
-export const FormSpecificScreen = ({ navigation }) => {
-  const renderTeamMembers = ({ item }) => (
-    // filled = 'rgba(129, 179, 106, 0.8)';
-    <TouchableOpacity>
-      <View style={dashStyles.listItemView}>
-        <Text style={dashStyles.listItemText}>{item.firstName} {item.lastName.substring(0, 1)}.</Text>
-        <View style={
-          {
-          height: 22,
-          width: 22,
-          backgroundColor: 'rgba(129, 179, 106, 0.8)',
-          borderColor: '#81B26ACC',
-          borderWidth: 1,
-          borderRadius: 50,
-          alignSelf: 'center'
-          }
-        }>
+export const FormSpecificScreen = ({ navigation, route }) => {
+  console.log(route);
+  const renderTeamMembers = ({ item }) => {
+    let fill = 'rgba(129, 179, 106, 0.8)';
+    if (!item.complete) {
+      fill = 'transparent'
+    }
+    return (
+      <TouchableOpacity>
+        <View style={dashStyles.listItemView}>
+          <Text style={dashStyles.listItemText}>{item.firstName} {item.lastName.substring(0, 1)}.</Text>
+          <View style={
+            {
+            height: 20,
+            width: 20,
+            backgroundColor: fill,
+            borderColor: '#81B26ACC',
+            borderWidth: 1.8,
+            borderRadius: 50,
+            alignSelf: 'center'
+            }
+          }>
+          </View>
         </View>
-      </View>
-    </TouchableOpacity>
-  );
+      </TouchableOpacity>
+    );
+  }
 
   return (
     <SafeAreaView style={dashStyles.container}>
@@ -36,19 +42,7 @@ export const FormSpecificScreen = ({ navigation }) => {
           renderItem={renderTeamMembers}
         />
       </View>
+
     </SafeAreaView>
   )
 };
-
-// const localStyles = StyleSheet.create({
-//   completed: {
-//     // justifyContent: 'center',
-//     height: 22,
-//     width: 22,
-//     backgroundColor: 'rgba(129, 179, 106, 0.8)',
-//     borderColor: '#81B26ACC',
-//     borderWidth: 1,
-//     borderRadius: 50,
-//     alignSelf: 'center',
-//   }
-// })

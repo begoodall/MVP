@@ -94,7 +94,6 @@ export const dashStyles = StyleSheet.create({
     backgroundColor: 'rgba(125, 204, 243, 0.3)',
     borderColor: '#7DCCF3',
     borderRadius: 12,
-    shadowColor: 'rgba(0, 0, 0, 0.25)',
     borderWidth: 1,
   },
   addFormBtn: {
@@ -107,10 +106,10 @@ export const dashStyles = StyleSheet.create({
     left: 280
   },
   addFormPlus: {
+    alignSelf: 'center',
     color: '#F3F3F3',
     fontSize: 36,
     textAlign: 'center',
-    alignSelf: 'center'
-  }
+  },
 
 })
