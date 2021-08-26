@@ -113,3 +113,36 @@ export const dumForm2Data = {
     }
   ]
 };
+
+export const dumUserData = {
+  firstName: 'Brian',
+  lastName: 'Goodall',
+  id: 23456,
+  forms: [
+    {
+      title: 'Sprint 1 Reflection',
+      dueDate: '8/30/21',
+      complete: true,
+    },
+    {
+      title: 'Sprint 2 Reflection',
+      dueDate: '8/31/21',
+      complete: true,
+    },
+    {
+      title: 'Personal Narrative',
+      dueDate: '8/30/21',
+      complete: false,
+    },
+    {
+      title: 'Sprint 3 Reflection',
+      dueDate: '8/32/21',
+      complete: false,
+    },
+    {
+      title: 'Group Reflection',
+      dueDate: '8/32/21',
+      complete: false,
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import { s } from '../styles.js';
 
 export const WelcomeToTeamScreen = ({ navigation }) => {
   const [name, setName] = useState('');
-  const handleNext = () => navigation.navigate('FormBoardScreen', { name: name });
+  const handleNext = () => navigation.navigate('UserFormsScreen', { name: name });
 
   return (
     <SafeAreaView style={s.aroundContainer}>

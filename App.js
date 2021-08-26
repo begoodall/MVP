@@ -9,6 +9,7 @@ import { FormSpecificScreen } from './app/screens/create/FormSpecificScreen.js';
 import { FormResponseScreen } from './app/screens/create/FormResponseScreen';
 import { IDEntryScreen } from './app/screens/join/IDEntryScreen';
 import { WelcomeToTeamScreen } from './app/screens/join/WelcomeToTeamScreen.js';
+import { UserFormsScreen } from './app/screens/join/UserFormsScreen.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -79,6 +80,13 @@ const MyStack = () => {
           options={{
             headerShown: false
           }}
+      />
+      <Stack.Screen
+        name="UserFormsScreen"
+        component={UserFormsScreen}
+        options={{
+          headerShown: false
+        }}
       />
       </Stack.Navigator>
     </NavigationContainer>
