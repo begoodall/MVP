@@ -1,4 +1,4 @@
-import { StyleSheet, TouchableNativeFeedback } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const s = StyleSheet.create({
   evenContainer: {
@@ -41,19 +41,52 @@ export const s = StyleSheet.create({
     fontFamily: 'Gill Sans',
     fontSize: 20,
     lineHeight: 28,
-    padding: 10,
+    padding: 8,
     color: '#F3F3F3',
     borderBottomColor: 'rgba(125, 204, 243, 0.8)',
     height: 50,
     width: 280,
     borderBottomWidth: 1
   },
-  nextBtn: {
-    position: 'absolute',
-    color: 'white',
-    width: 43,
-    height: 32,
-    left: 293,
-    top: 749,
+});
+
+export const dashStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: '#334257',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+  },
+  title: {
+    top: 70,
+    left: 40,
+    alignSelf: 'flex-start',
+    fontFamily: 'Gill Sans',
+    fontSize: 30,
+    color: '#F3F3F3'
+  },
+  list: {
+    top: 60,
+    left: 20,
+    // alignSelf: 'flex-start'
+  },
+  listItemText: {
+    fontFamily: 'Gill Sans',
+    fontSize: 24,
+    fontWeight: '300',
+    color: '#F3F3F3'
+  },
+  listItemView: {
+    width: 300,
+    padding: 14,
+    marginTop: 18,
+    marginBottom: 18,
+    backgroundColor: 'rgba(125, 204, 243, 0.3)',
+    borderColor: '#7DCCF3',
+    borderRadius: 12,
+    shadowColor: 'rgba(0, 0, 0, 0.25)',
+    borderWidth: 1,
   }
+
 })

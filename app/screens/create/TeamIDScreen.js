@@ -15,7 +15,7 @@ export const TeamIDScreen = ({ navigation, route }) => {
         </TouchableOpacity>
       </View>
       <Button
-        color="white"
+        color="rgba(125, 204, 243, 1)"
         title="Next"
         onPress={handleNext}
       />
