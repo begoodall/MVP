@@ -18,12 +18,12 @@ export const dumBoardData = {
     },
     {
       title: 'Sprint 3 Reflection',
-      dueDate: '8/32/21',
+      dueDate: '8/31/21',
       id: 'f807sdf8'
     },
     {
       title: 'Group Reflection',
-      dueDate: '8/32/21',
+      dueDate: '8/31/21',
       id: 'f80ds8fa'
     }
   ]
@@ -42,13 +42,6 @@ export const dumForm1Data = {
       response: 'Loved this sprint'
     },
     {
-      firstName: 'Brian',
-      lastName: 'Goodall',
-      id: 23456,
-      complete: false,
-      response: null
-    },
-    {
       firstName: 'Mohamed',
       lastName: 'Zein',
       id: 34567,
@@ -59,8 +52,8 @@ export const dumForm1Data = {
       firstName: 'Michael',
       lastName: 'Chan',
       id: 45678,
-      complete: true,
-      response: 'Such a great sprint wow'
+      complete: false,
+      response: null
     },
     {
       firstName: 'Soohyung',
@@ -82,13 +75,6 @@ export const dumForm2Data = {
       id: 12345,
       complete: true,
       response: 'Loved this sprint too'
-    },
-    {
-      firstName: 'Brian',
-      lastName: 'Goodall',
-      id: 23456,
-      complete: true,
-      response: 'Bare mins baby!'
     },
     {
       firstName: 'Mohamed',
@@ -122,12 +108,12 @@ export const dumUserData = {
     {
       title: 'Sprint 1 Reflection',
       dueDate: '8/30/21',
-      complete: true,
+      complete: false,
     },
     {
       title: 'Sprint 2 Reflection',
       dueDate: '8/31/21',
-      complete: true,
+      complete: false,
     },
     {
       title: 'Personal Narrative',
@@ -136,12 +122,45 @@ export const dumUserData = {
     },
     {
       title: 'Sprint 3 Reflection',
-      dueDate: '8/32/21',
+      dueDate: '8/31/21',
       complete: false,
     },
     {
       title: 'Group Reflection',
-      dueDate: '8/32/21',
+      dueDate: '8/31/21',
+      complete: false,
+    }
+  ]
+}
+
+export const dumUserData2 = {
+  firstName: 'Brian',
+  lastName: 'Goodall',
+  id: 23456,
+  forms: [
+    {
+      title: 'Sprint 1 Reflection',
+      dueDate: '8/30/21',
+      complete: true,
+    },
+    {
+      title: 'Sprint 2 Reflection',
+      dueDate: '8/31/21',
+      complete: false,
+    },
+    {
+      title: 'Personal Narrative',
+      dueDate: '8/30/21',
+      complete: false,
+    },
+    {
+      title: 'Sprint 3 Reflection',
+      dueDate: '8/31/21',
+      complete: false,
+    },
+    {
+      title: 'Group Reflection',
+      dueDate: '8/31/21',
       complete: false,
     }
   ]

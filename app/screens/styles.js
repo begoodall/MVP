@@ -11,7 +11,7 @@ export const s = StyleSheet.create({
     flex: 1,
     backgroundColor: '#334257',
     alignItems: 'center',
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-around',
   },
   titleText: {
     fontFamily: 'Gill Sans',

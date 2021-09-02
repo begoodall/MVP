@@ -9,7 +9,7 @@ export const WelcomeToTeamScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={s.aroundContainer}>
       <Text style={s.pText}>Welcome to Hack Reactor's FormSpace!</Text>
-      <View>
+      <View style={{ alignItems: 'center'}}>
         <Text style={s.pText}>What's your name?</Text>
         <TextInput
           style={s.input}

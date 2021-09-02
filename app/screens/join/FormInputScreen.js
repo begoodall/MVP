@@ -17,7 +17,16 @@ export const FormInputScreen = ({ navigation }) => {
       { text: "Cancel", style: "cancel" }
     ]
   );
-  const submittedAlert = () => Alert.alert("Submitted!");
+  const submittedAlert = () => Alert.alert(
+    "Submitted!",
+    "nice.",
+    [
+      {
+        text: "OK",
+        onPress: () => navigation.navigate('CompletedForm1Screen')
+      }
+    ]
+    );
   let formReaction = handleSubmit;
   if (response1.length > 9 && response2.length > 9) {
     formReaction = handleSubmit;
