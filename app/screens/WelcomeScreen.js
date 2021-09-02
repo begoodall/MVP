@@ -5,7 +5,7 @@ import { s, dashStyles } from './styles.js';
 
 export const HomeScreen = ({ navigation }) => {
   const handleHomePress = () => navigation.navigate('CreateJoinScreen');
-  setTimeout(() => navigation.navigate('CreateJoinScreen'), 1500);
+  setTimeout(() => navigation.navigate('CreateJoinScreen'), 2000);
 
   return (
     <SafeAreaView style={s.evenContainer}>
