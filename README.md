@@ -7,9 +7,11 @@
 
 ## Key Features
 * Creating a team
+<img src="demo/team-creation.gif" alt="team creation" width="150px">
+* Checking status of form submission as a team leader
+<img src="demo/checking-forms.gif" alt="form checking" width="150px">
 * Joining a team
 * Filling out & submitting forms as a team member
-* Checking status of form submission as a team leader
 * And more to come!
 
 
