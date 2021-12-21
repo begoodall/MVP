@@ -6,10 +6,14 @@
 </div>
 
 ## Key Features
-* Creating a team
-<img src="demo/team-creation.gif" alt="team creation" width="150px">
-* Checking status of form submission as a team leader
-<img src="demo/checking-forms.gif" alt="form checking" width="150px">
+<ul>
+  Creating a team
+  <img src="demo/team-creation.gif" alt="team creation" width="200px">
+</ul>
+<ul>
+  Checking status of form submission as a team leader
+  <img src="demo/checking-forms.gif" alt="form checking" width="200px">
+</ul>
 * Joining a team
 * Filling out & submitting forms as a team member
 * And more to come!
