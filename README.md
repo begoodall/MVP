@@ -6,21 +6,8 @@
 </div>
 
 ## Key Features
-<ul>
-  <div align="center">
-    Creating a team
-    <br>
-    <img src="demo/team-creation.gif" alt="team creation" width="200px">
-  </div>
-</ul>
-<ul>
-  <div align="center">
-    Creating a team
-    <br>
-    Checking status of form submission as a team leader
-    <img src="demo/checking-forms.gif" alt="form checking" width="200px">
-  </div>
-</ul>
+* Creating a team
+* Checking status of form submission as a team leader
 * Joining a team
 * Filling out & submitting forms as a team member
 * And more to come!
