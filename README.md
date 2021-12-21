@@ -1,6 +1,10 @@
 <h2 align="center">FormSpaces</h2>
 <h6 align="center">A mobile app prototype created with the intention of streamlining team-based form submission</h6>
 
+<div align="center">
+  <img src="demo/intro.gif" alt="Intro Page animation" width="250px">
+</div>
+
 ## Key Features
 * Creating a team
 * Joining a team
@@ -8,10 +12,6 @@
 * Checking status of form submission as a team leader
 * And more to come!
 
-
-<div align="center">
-  <img src="demo/intro.gif" alt="Intro Page animation" width="250px">
-</div>
 
 ## How To Use
 To clone and run this app, you'll need Git + Node.js on your computer and the Expo Go app on your phone.
