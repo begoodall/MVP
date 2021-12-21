@@ -7,12 +7,19 @@
 
 ## Key Features
 <ul>
-  Creating a team
-  <img src="demo/team-creation.gif" alt="team creation" width="200px">
+  <div align="center">
+    Creating a team
+    <br>
+    <img src="demo/team-creation.gif" alt="team creation" width="200px">
+  </div>
 </ul>
 <ul>
-  Checking status of form submission as a team leader
-  <img src="demo/checking-forms.gif" alt="form checking" width="200px">
+  <div align="center">
+    Creating a team
+    <br>
+    Checking status of form submission as a team leader
+    <img src="demo/checking-forms.gif" alt="form checking" width="200px">
+  </div>
 </ul>
 * Joining a team
 * Filling out & submitting forms as a team member
