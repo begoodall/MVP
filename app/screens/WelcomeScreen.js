@@ -10,10 +10,6 @@ export const HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={s.evenContainer}>
       <Text style={s.titleText}>Welcome to FormSpaces!</Text>
-      {/* <Button
-        title="Start"
-        onPress={handleHomePress}
-      /> */}
     </SafeAreaView>
   );
 }
@@ -24,12 +20,6 @@ const handleJoinPress = () => navigation.navigate('IDEntryScreen');
 
   return (
     <SafeAreaView style={s.evenContainer}>
-      {/* <Button
-        style={s.baseText}
-        color="rgba(125, 204, 243, 1)"
-        title="Create a Team"
-        onPress={handleCreatePress}
-      /> */}
       <Pressable onPress={handleCreatePress}>
         <View style={{
           flexDirection: 'row',
@@ -44,15 +34,8 @@ const handleJoinPress = () => navigation.navigate('IDEntryScreen');
           borderWidth: 1,
         }}>
           <Text style={s.titleText}>Create a Team</Text>
-          {/* <Text style={dashStyles.listItemTextSmall}>{item.dueDate}</Text> */}
         </View>
       </Pressable>
-      {/* <Button
-        color="rgba(125, 204, 243, 1)"
-        style={s.baseText}
-        title="Join a Team"
-        onPress={handleJoinPress}
-      /> */}
       <Pressable onPress={handleJoinPress}>
         <View style={{
           flexDirection: 'row',

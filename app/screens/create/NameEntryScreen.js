@@ -14,7 +14,6 @@ export const NameEntryScreen = ({ navigation }) => {
       )
     }
   }
-  // const handleSubmit = () => navigation.navigate('TeamIDScreen', { name: name, teamName: teamName });
 
   return (
     <SafeAreaView style={s.evenContainer}>

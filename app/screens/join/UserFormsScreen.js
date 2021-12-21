@@ -20,9 +20,7 @@ export const UserFormsScreen = ({ navigation }) => {
           marginTop: 18,
           marginBottom: 18,
           backgroundColor: bgColor,
-          // borderColor: '#7DCCF3',
           borderRadius: 12,
-          // borderWidth: 1,
         }}>
           <Text style={dashStyles.listItemText}>{item.title}</Text>
           <Text style={dashStyles.listItemTextSmall}>{item.dueDate}</Text>

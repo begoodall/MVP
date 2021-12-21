@@ -13,7 +13,6 @@ export const IDEntryScreen = ({ navigation }) => {
       )
     }
   }
-  // const handleSubmit = () => navigation.navigate('WelcomeToTeamScreen');
 
   return (
     <SafeAreaView style={s.evenContainer}>
