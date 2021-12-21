@@ -39,4 +39,4 @@ $ npm install
 $ npm start
 ```
 
-#### Scan the QR code in the terminal & that's it! Hope you enjoy.
+#### Scan the QR code in the terminal with your phone's camera & that's it! Hope you enjoy.
