@@ -10,7 +10,7 @@
 
 
 <div align="center">
-  <img src="demo/intro.gif" alt="Intro Page animation" width="400px">
+  <img src="demo/intro.gif" alt="Intro Page animation" width="250px">
 </div>
 
 ## How To Use
