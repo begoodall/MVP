@@ -7,8 +7,8 @@
 
 ## Key Features
 * Creating a team
-* Checking status of form submission as a team leader
 * Joining a team
+* Checking status of form submission as a team owner
 * Filling out & submitting forms as a team member
 * And more to come!
 
